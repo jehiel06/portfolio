@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#000000" rx="20"/>
+  
+  <!-- Main border -->
+  <rect x="8" y="8" width="84" height="84" fill="none" 
+        stroke="#f97316" stroke-width="2" rx="16"/>
+  
+  <!-- Top bar with name -->
+  <rect x="8" y="8" width="84" height="18" fill="#f97316" opacity="0.15" rx="16"/>
+  <text x="50" y="20" font-size="8" font-weight="800" fill="#ffffff" 
+        font-family="Arial, sans-serif" text-anchor="middle">JAVA</text>
+  
+  <!-- Large J -->
+  <text x="50" y="65" font-size="38" font-weight="900" fill="#f97316" 
+        font-family="Arial, sans-serif" text-anchor="middle">J</text>
+  
+  <!-- Bottom role -->
+  <text x="50" y="86" font-size="7" font-weight="600" fill="#9ca3af" 
+        font-family="Arial, sans-serif" text-anchor="middle">Jehiel A | Dev</text>
+</svg>
