@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-    FaCode, 
-    FaLaptopCode, 
-    FaRocket, 
-    FaLinkedin, 
-    FaGithub, 
-    FaEnvelope, 
-    FaGraduationCap, 
+import {
+    FaCode,
+    FaLaptopCode,
+    FaRocket,
+    FaLinkedin,
+    FaGithub,
+    FaEnvelope,
+    FaGraduationCap,
     FaAward,
     FaJava,
     FaReact,
@@ -17,10 +17,10 @@ import {
     FaDatabase,
     FaUnity
 } from 'react-icons/fa';
-import { 
-    SiSpringboot, 
-    SiJavascript, 
-    SiMongodb, 
+import {
+    SiSpringboot,
+    SiJavascript,
+    SiMongodb,
     SiMysql,
     SiC,
     SiCplusplus,
@@ -55,7 +55,7 @@ const TechCard = ({ tech, index }) => {
         >
             {/* Subtle Mouse-tracking orange glow inside card */}
             {isHovered && (
-                <div 
+                <div
                     className="absolute pointer-events-none"
                     style={{
                         left: `${mousePosition.x}px`,
@@ -105,20 +105,20 @@ const About = () => {
         <section id="about" className="min-h-screen bg-black py-20">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Section Title */}
-                <motion.div 
+                <motion.div
                     className="text-5xl sm:text-6xl text-orange-500 font-bold mb-12 text-center"
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    About Me
+                    About <span className='text-white'>Me</span>
                 </motion.div>
 
                 {/* Main Content */}
                 <div className="space-y-8">
                     {/* Introduction */}
-                    <motion.div 
+                    <motion.div
                         className="space-y-4"
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -134,7 +134,7 @@ const About = () => {
                     </motion.div>
 
                     {/* Education & Quick Info */}
-                    <motion.div 
+                    <motion.div
                         className="grid grid-cols-1 md:grid-cols-2 gap-6"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ const About = () => {
                     </motion.div>
 
                     {/* Description */}
-                    <motion.div 
+                    <motion.div
                         className="bg-black border border-gray-900 rounded-xl p-8 space-y-4"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -167,29 +167,29 @@ const About = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                            I'm a passionate Computer Science student at <span className="text-white font-semibold">Sri Ramakrishna Engineering College, Coimbatore</span>, 
-                            with a strong focus on building scalable, user-friendly web applications. My journey in software development has been driven by 
+                            I'm a passionate Computer Science student at <span className="text-white font-semibold">Sri Ramakrishna Engineering College, Coimbatore</span>,
+                            with a strong focus on building scalable, user-friendly web applications. My journey in software development has been driven by
                             curiosity and a desire to solve real-world problems through innovative technology solutions.
                         </p>
                         <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                            I specialize in <span className="text-orange-500 font-semibold">Full Stack Java Development</span>, working with technologies like 
-                            <span className="text-orange-500 font-semibold"> Java, Spring Boot, React.js, MongoDB, Docker, and Kafka</span>. 
+                            I specialize in <span className="text-orange-500 font-semibold">Full Stack Java Development</span>, working with technologies like
+                            <span className="text-orange-500 font-semibold"> Java, Spring Boot, React.js, MongoDB, Docker, and Kafka</span>.
                             My approach to development emphasizes clean code, best practices, and creating intuitive user experiences.
                         </p>
                         <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                            Beyond academics, I actively engage in personal projects that challenge me to learn new frameworks and tools. 
-                            I'm particularly interested in building enterprise-level applications, microservices architecture, RESTful APIs, and responsive frontend interfaces. 
+                            Beyond academics, I actively engage in personal projects that challenge me to learn new frameworks and tools.
+                            I'm particularly interested in building enterprise-level applications, microservices architecture, RESTful APIs, and responsive frontend interfaces.
                             My goal is to continuously improve my craft and contribute to meaningful projects that make a positive impact.
                         </p>
                         <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                            I'm currently seeking <span className="text-white font-semibold">internship opportunities, collaborative projects, and open-source contributions</span> where 
-                            I can apply my skills, learn from experienced developers, and grow as a software engineer. I believe in the power of 
+                            I'm currently seeking <span className="text-white font-semibold">internship opportunities, collaborative projects, and open-source contributions</span> where
+                            I can apply my skills, learn from experienced developers, and grow as a software engineer. I believe in the power of
                             teamwork and am eager to contribute to innovative solutions in a professional environment.
                         </p>
                     </motion.div>
 
                     {/* What I Do Cards */}
-                    <motion.div 
+                    <motion.div
                         className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -216,7 +216,7 @@ const About = () => {
                     </motion.div>
 
                     {/* Tech Stack with Individual Card Glow */}
-                    <motion.div 
+                    <motion.div
                         className="bg-black border border-gray-900 rounded-2xl p-8"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -229,7 +229,7 @@ const About = () => {
                             </h4>
                             <p className="text-gray-400 text-sm">Technologies I work with</p>
                         </div>
-                        
+
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                             {techStack.map((tech, index) => (
                                 <TechCard key={index} tech={tech} index={index} />
@@ -245,7 +245,7 @@ const About = () => {
                     </motion.div>
 
                     {/* CTA Section with LinkedIn */}
-                    <motion.div 
+                    <motion.div
                         className="mt-12 space-y-6"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -253,13 +253,13 @@ const About = () => {
                         transition={{ duration: 0.6, delay: 0.7 }}
                     >
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <a 
+                            <a
                                 href="#contact"
                                 className="bg-orange-500 hover:bg-orange-600 cursor-pointer transition-all duration-300 px-8 py-3 rounded-lg font-semibold text-white hover:scale-105 shadow-lg hover:shadow-orange-500/50"
                             >
                                 Get in Touch
                             </a>
-                            <a 
+                            <a
                                 href="/resume.pdf"
                                 download
                                 className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white cursor-pointer transition-all duration-300 px-8 py-3 rounded-lg font-semibold hover:scale-105"
@@ -270,7 +270,7 @@ const About = () => {
 
                         {/* Social Links */}
                         <div className="flex flex-wrap items-center justify-center gap-6">
-                            <a 
+                            <a
                                 href="https://www.linkedin.com/in/jehiel06/"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -279,7 +279,7 @@ const About = () => {
                                 <FaLinkedin className="w-5 h-5 group-hover:scale-125 transition-transform" />
                                 <span className="text-sm">Linkedin Profile</span>
                             </a>
-                            <a 
+                            <a
                                 href="https://github.com/yourusername"
                                 target="_blank"
                                 rel="noopener noreferrer"

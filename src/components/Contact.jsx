@@ -61,7 +61,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Get In Touch
+          Get In <span className="text-white">Touch</span>
         </motion.div>
 
         <motion.p

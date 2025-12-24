@@ -102,7 +102,7 @@ export const Home = () => {
               transition={{ delay: 0.9, duration: 0.8 }}
             >
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/jehiel06"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-orange-500 transition-colors duration-300 hover:scale-110 transform"

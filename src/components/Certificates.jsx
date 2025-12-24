@@ -7,70 +7,83 @@ import {
     FaGraduationCap,
     FaCode,
     FaServer,
-    FaCloud
+    FaJava
 } from 'react-icons/fa';
+
+import { SiSalesforce, SiSpringboot } from 'react-icons/si';
 
 const Certificates = () => {
     const certificates = [
         {
-            id: 1,
-            title: "Java Programming Masterclass",
-            issuer: "Udemy",
-            date: "2024",
-            skills: ["Java", "OOP", "Data Structures", "Algorithms"],
-            icon: <FaCode />,
-            link: "https://udemy.com/certificate/example",
-            color: "border-l-orange-500"
-        },
-        {
-            id: 2,
-            title: "Spring Boot & Microservices",
-            issuer: "Coursera",
-            date: "2023",
-            skills: ["Spring Boot", "Microservices", "Docker", "REST APIs"],
-            icon: <FaServer />,
-            link: "https://coursera.org/certificate/example",
-            color: "border-l-green-500"
-        },
-        {
-            id: 3,
-            title: "React.js Frontend Development",
-            issuer: "freeCodeCamp",
-            date: "2023",
-            skills: ["React.js", "JavaScript", "Tailwind CSS", "API Integration"],
-            icon: <FaCode />,
-            link: "https://freecodecamp.org/certification/example",
+            id: 8,
+            title: "Java Full Stack",
+            issuer: "Wise Techsource Pvt. Ltd.",
+            date: "Sep 2024",
+            skills: ["Core Java", "Spring Boot", "JPA", "Hibernate", "H2"],
+            icon: <FaJava />,
+            link: "https://www.linkedin.com/posts/jehiel06_java-fsd-certificate-activity-7241806538951008256-3ZHc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbPEikBZgQ3qNh-tC91LdIRMWjsyNPX7PM",
             color: "border-l-cyan-500"
         },
         {
             id: 4,
-            title: "Cloud Computing Fundamentals",
-            issuer: "Google Cloud",
-            date: "2023",
-            skills: ["Cloud Computing", "AWS Basics", "Deployment", "Security"],
-            icon: <FaCloud />,
-            link: "https://cloud.google.com/certification/example",
+            title: "Advanced Java Programming",
+            issuer: "LinkedIn",
+            date: "Aug 2024",
+            skills: ["Java"],
+            icon: <FaJava />,
+            link: "https://www.linkedin.com/learning/certificates/2107bf558aa06eabe4894bec535d88acbbca768e16fdc9d53405ef7167543afe",
             color: "border-l-blue-500"
         },
         {
+            id: 3,
+            title: "Programming using Java",
+            issuer: "Infosys Springboard",
+            date: "April 2025",
+            skills: ["Core Java", "Object-Oriented Programming (OOP)"],
+            icon: <FaJava />,
+            link: "https://drive.google.com/uc?export=download&id=1xzItK9PhjRUBoUH53osHqgqFcywVfvr6",
+            color: "border-l-cyan-500"
+        },
+        {
             id: 5,
-            title: "Full Stack Web Development",
-            issuer: "SREC",
-            date: "2023",
-            skills: ["MERN Stack", "Git", "Deployment", "Best Practices"],
-            icon: <FaGraduationCap />,
-            link: "#",
+            title: "Building Full-Stack Apps with React and Spring",
+            issuer: "LinkedIn",
+            date: "Aug 2024",
+            skills: ["Spring Framework", "Spring Boot", "React.js"],
+            icon: <SiSpringboot />,
+            link: "https://www.linkedin.com/learning/certificates/70b46a24daf3f08a5fd737c5754b212b7777ac9ee31831ed44d46801d13f3596",
             color: "border-l-purple-500"
         },
         {
             id: 6,
-            title: "Problem Solving (Advanced)",
-            issuer: "HackerRank",
-            date: "2023",
-            skills: ["Algorithms", "Data Structures", "Problem Solving"],
+            title: "Advanced Diploma in Java Programming (ADJP)",
+            issuer: "CSC Computer Education (P) Ltd",
+            date: "Sep 2023",
+            skills: ["C (Programming Language)", "C++", "Java", "Servlets", "HTML5", "Cascading Style Sheets (CSS)"],
             icon: <FaCode />,
-            link: "https://hackerrank.com/certificate/example",
+            link: "https://drive.google.com/uc?export=download&id=1nJnklFiggM5WsNziuTtTVoqw9Mysg0CA",
             color: "border-l-red-500"
+        },
+
+        {
+            id: 1,
+            title: "Superbadge: Agentforce Service",
+            issuer: "Salesforce",
+            date: "Jun 2025",
+            skills: ["Topic & Action Configuration", "Einstein Agent Setup & Deployment", "Service Process Automation"],
+            icon: <SiSalesforce />,
+            link: "https://www.salesforce.com/trailblazer/jehiel06",
+            color: "border-l-orange-500"
+        },
+        {
+            id: 2,
+            title: "Superbadge: Prompt Builder Templates",
+            issuer: "Salesforce",
+            date: "Jun 2025",
+            skills: ["Prompt Template Development", "Template Testing & Iteration", "Integration with Salesforce Automation"],
+            icon: <SiSalesforce />,
+            link: "https://www.salesforce.com/trailblazer/jehiel06",
+            color: "border-l-green-500"
         }
     ];
 
