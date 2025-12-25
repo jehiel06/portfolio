@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { LoadingScreen } from "./components/LoadingScreen";
@@ -26,7 +27,7 @@ function App() {
 
     const timer = setTimeout(() => {
       setFadeOut(true);
-      setTimeout(() => setLoading(false), 500); 
+      setTimeout(() => setLoading(false), 500);
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
