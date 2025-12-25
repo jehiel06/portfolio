@@ -5,11 +5,8 @@ import {
   FaExternalLinkAlt,
   FaJava,
   FaReact,
-  FaDatabase,
-  FaServer,
-  FaCode,
-  FaMobileAlt,
-  FaCloud
+  FaNetworkWired,
+  FaCode
 } from 'react-icons/fa';
 import {
   SiSpringboot,
@@ -22,10 +19,9 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
-  SiPostgresql,
-  SiKubernetes,
-  SiApachekafka
+  SiPostgresql
 } from 'react-icons/si';
+import { TbApi } from 'react-icons/tb';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -35,9 +31,9 @@ const Projects = () => {
       id: 1,
       title: "Movie Ticket Booking Chatbot",
       description: "A full-stack movie ticket booking platform with real-time ticket booking, and responsive chatbot. Built with microservices architecture.",
-      technologies: ["Java", "Spring Boot", "React.js", "MongoDB", "DialogFlow", "Docker"],
+      technologies: ["Java", "Spring Boot", "React.js", "MongoDB", "DialogFlow", "Google Cloud", "Zoho Catalyst"],
       icons: [<FaJava />, <SiSpringboot />, <FaReact />, <SiMongodb />, <SiDialogflow />, <SiContactlesspayment />],
-      github: "https://github.com/yourusername/event-https://github.com/jehiel06/movie-ticket-booking-chatbot",
+      github: "https://github.com/jehiel06/movie-ticket-booking-chatbot",
       live: "https://movie-ticket-booking-chatbot.vercel.app",
       category: "fullstack",
       status: "completed",
@@ -45,6 +41,18 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "NexVerify Intern Project",
+      description: "NexVerify is a backend-focused intern project developed using Java Spring Boot and PostgreSQL. The project is designed to handle secure data verification and backend operations, including RESTful APIs, database integration, and business logic implementation. The application is currently under active development.",
+      technologies: ["Java", "Spring Boot", "PostgreSQL", "API Design"],
+      icons: [<FaJava />, <SiSpringboot />, <SiPostgresql />, <TbApi />],
+      github: "https://github.com/jehiel06/nexverify-project",
+      live: "",
+      category: "backend",
+      status: "in-progress",
+      image: ""
+    },
+    {
+      id: 3,
       title: "Music Platform",
       description: "A simple music platform website built using HTML, CSS, and JavaScript that allows users to play and control music through an interactive and user-friendly interface.",
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -54,18 +62,6 @@ const Projects = () => {
       category: "frontend",
       status: "completed",
       image: "https://images.unsplash.com/photo-1616356607338-fd87169ecf1a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      id: 3,
-      title: "NexVerify Intern Project",
-      description: "NexVerify is a backend-focused intern project developed using Java Spring Boot and PostgreSQL. The project is designed to handle secure data verification and backend operations, including RESTful APIs, database integration, and business logic implementation. The application is currently under active development.",
-      technologies: ["Java", "Spring Boot", "PostgreSQL"],
-      icons: [<FaJava />, <SiSpringboot />, <SiPostgresql />],
-      github: "https://github.com/jehiel06/nexverify-project",
-      live: "",
-      category: "backend",
-      status: "in-progress",
-      image: ""
     },
     {
       id: 4,
@@ -90,6 +86,18 @@ const Projects = () => {
       category: "frontend",
       status: "completed",
       image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&auto=format&fit=crop"
+    },
+    {
+      id: 6,
+      title: "FLAMES Game",
+      description: "A fun FLAMES game developed using HTML, CSS, and JavaScript that calculates relationship outcomes based on user names, featuring a simple, interactive, and responsive interface.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      icons: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
+      github: "https://github.com/jehiel06/flames",
+      live: "https://jehiel06.github.io/flames",
+      category: "frontend",
+      status: "completed",
+      image: "https://plus.unsplash.com/premium_photo-1718474619729-614219d6b7df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ];
 
@@ -248,7 +256,7 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <div className="text-center">
-            <div className="text-orange-500 text-4xl font-bold mb-2">8+</div>
+            <div className="text-orange-500 text-4xl font-bold mb-2">6+</div>
             <div className="text-gray-400 text-sm">Projects Completed</div>
           </div>
           <div className="text-center">

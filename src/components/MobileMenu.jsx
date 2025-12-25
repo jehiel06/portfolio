@@ -12,14 +12,14 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   ];
 
   return (
-    <div 
+    <div
       className={`fixed top-0 left-0 w-full bg-[rgba(10, 10, 10, 0.98)] backdrop-blur-sm z-40 flex flex-col items-center justify-center
                   transition-all duration-300 ease-in-out
                   ${menuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}
     >
-      <button 
+      <button
         onClick={() => setMenuOpen(false)}
-        className="absolute top-6 right-7 text-white text-4xl focus:outline-none cursor-pointer hover:text-orange-500 transition-colors" 
+        className="absolute top-6 right-7 text-white text-4xl focus:outline-none cursor-pointer hover:text-orange-500 transition-colors"
         aria-label="Close Menu"
       >
         &times;
@@ -42,8 +42,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </nav>
 
       {/* Download CV Button in Mobile Menu */}
-      <a 
-        href="/Jehiel_Resume.pdf" 
+      <a
+        href="resume.pdf"
         download
         className="mt-10 flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
         onClick={() => setMenuOpen(false)}

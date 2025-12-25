@@ -8,42 +8,56 @@ import {
     FaCode,
     FaServer,
     FaPython,
-    FaJava
+    FaJava,
+    FaUniversity,
 } from 'react-icons/fa';
 
-import { SiSalesforce, SiSpringboot } from 'react-icons/si';
+import {
+    SiSalesforce,
+    SiSpringboot,
+} from 'react-icons/si';
 
 const Certificates = () => {
     const certificates = [
         {
-            id: 8,
+            id: 1,
+            title: "Full Stack Java Training",
+            issuer: "LiveTech",
+            date: "Sep 2025",
+            skills: ["Advanced Java", "Spring", "Spring Boot", "MySQL", "React js", "Tailwind"],
+            icon: <FaJava />,
+            link: "https://drive.google.com/file/d/1yxoEqEV3w4cNCkhiIyWpBgx8uxjzzN_l/view?usp=drive_link",
+            color: "border-l-orange-500"
+        },
+        {
+            id: 2,
             title: "Java Full Stack",
-            issuer: "Wise Techsource Pvt. Ltd.",
+            issuer: "Wise TechSource Pvt. Ltd.",
             date: "Sep 2024",
             skills: ["Core Java", "Spring Boot", "JPA", "Hibernate", "H2"],
             icon: <FaJava />,
             link: "https://www.linkedin.com/posts/jehiel06_java-fsd-certificate-activity-7241806538951008256-3ZHc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbPEikBZgQ3qNh-tC91LdIRMWjsyNPX7PM",
-            color: "border-l-cyan-500"
-        },
-        {
-            id: 4,
-            title: "Advanced Java Programming",
-            issuer: "LinkedIn",
-            date: "Aug 2024",
-            skills: ["Java"],
-            icon: <FaJava />,
-            link: "https://www.linkedin.com/learning/certificates/2107bf558aa06eabe4894bec535d88acbbca768e16fdc9d53405ef7167543afe",
             color: "border-l-blue-500"
         },
         {
             id: 3,
+            title: "Advanced Java Programming",
+            issuer: "LinkedIn",
+            date: "Aug 2024",
+            skills: ["Java", "Exception Handling", "Multithreading", "Collections Framework", "Generics"],
+            icon: <FaJava />,
+            link: "https://www.linkedin.com/learning/certificates/2107bf558aa06eabe4894bec535d88acbbca768e16fdc9d53405ef7167543afe",
+            color: "border-l-white"
+        },
+        {
+            id: 4,
             title: "Programming using Java",
             issuer: "Infosys Springboard",
             date: "April 2025",
-            skills: ["Core Java", "Object-Oriented Programming (OOP)"],
+            skills: ["Core Java", "Object-Oriented Programming (OOP)", "Methods & Constructors", "Arrays & Strings"],
             icon: <FaJava />,
-            link: "https://drive.google.com/uc?export=download&id=1xzItK9PhjRUBoUH53osHqgqFcywVfvr6",
-            color: "border-l-cyan-500"
+            link: "https://drive.google.com/file/d/1-LgvC8lavW47VA5oY7JP4RPid7QPgGCc/view?usp=drive_link",
+            color: "border-l-green-500"
         },
         {
             id: 5,
@@ -53,16 +67,6 @@ const Certificates = () => {
             skills: ["Spring Framework", "Spring Boot", "React.js"],
             icon: <SiSpringboot />,
             link: "https://www.linkedin.com/learning/certificates/70b46a24daf3f08a5fd737c5754b212b7777ac9ee31831ed44d46801d13f3596",
-            color: "border-l-purple-500"
-        },
-        {
-            id: 6,
-            title: "Certificate Course in Python (CCP)",
-            issuer: "CSC Computer Education (P) Ltd",
-            date: "June 2023",
-            skills: ["Python", "Functions", "Modules", "Packages", "OOPS", "File IO"],
-            icon: <FaPython />,
-            link: "https://drive.google.com/file/d/1Ih7y4cGGeSjakAGJp4o1tRNywOHza2Ta/view?usp=drive_link",
             color: "border-l-red-500"
         },
         {
@@ -73,27 +77,70 @@ const Certificates = () => {
             skills: ["C (Programming Language)", "C++", "Java", "Servlets", "HTML5", "Cascading Style Sheets (CSS)"],
             icon: <FaCode />,
             link: "https://drive.google.com/file/d/1Ih7y4cGGeSjakAGJp4o1tRNywOHza2Ta/view?usp=drive_link",
-            color: "border-l-red-500"
+            color: "border-l-yellow-500"
         },
         {
-            id: 1,
+            id: 7,
+            title: "Cyber Security and Privacy",
+            issuer: "NPTEL",
+            date: "Oct 2025",
+            skills: [
+                "Cyber Security Fundamentals",
+                "Privacy Protection",
+                "Cryptography Basics",
+                "Network Security",
+                "Malware & Threat Analysis",
+                "Secure Communication"
+            ],
+            icon: <FaUniversity />,
+            link: "https://drive.google.com/file/d/1eC7detbmJW1mSN4DO6923y288rBZRmmI/view?usp=drive_link",
+            color: "border-l-purple-500"
+        },
+        {
+            id: 8,
+            title: "Privacy and Security in Online Social Media",
+            issuer: "NPTEL",
+            date: "April 2025",
+            skills: [
+                "Online Privacy Protection",
+                "Social Media Security",
+                "Data Protection & Privacy",
+                "Cyber Threats in Social Platforms",
+                "User Behavior & Privacy Risks"
+            ],
+            icon: <FaUniversity />,
+            link: "https://drive.google.com/file/d/1khhMF77hJWID91sbHjJd6Mr2QzYO7t8A/view?usp=drive_link",
+            color: "border-l-white"
+        },
+        {
+            id: 9,
             title: "Superbadge: Agentforce Service",
             issuer: "Salesforce",
             date: "June 2025",
             skills: ["Topic & Action Configuration", "Einstein Agent Setup & Deployment", "Service Process Automation"],
             icon: <SiSalesforce />,
             link: "https://www.salesforce.com/trailblazer/jehiel06",
-            color: "border-l-orange-500"
+            color: "border-l-green-500"
         },
         {
-            id: 2,
+            id: 10,
             title: "Superbadge: Prompt Builder Templates",
             issuer: "Salesforce",
             date: "Jun 2025",
             skills: ["Prompt Template Development", "Template Testing & Iteration", "Integration with Salesforce Automation"],
             icon: <SiSalesforce />,
             link: "https://www.salesforce.com/trailblazer/jehiel06",
-            color: "border-l-green-500"
+            color: "border-l-white"
+        },
+        {
+            id: 11,
+            title: "Certificate Course in Python (CCP)",
+            issuer: "CSC Computer Education (P) Ltd",
+            date: "June 2023",
+            skills: ["Python", "Functions", "Modules", "Packages", "OOPS", "File IO"],
+            icon: <FaPython />,
+            link: "https://drive.google.com/file/d/1Ih7y4cGGeSjakAGJp4o1tRNywOHza2Ta/view?usp=drive_link",
+            color: "border-l-blue-500"
         }
     ];
 

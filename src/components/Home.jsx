@@ -140,11 +140,11 @@ export const Home = () => {
                 <p className="text-gray-400 text-sm mt-1">Student</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="text-orange-500 text-3xl font-bold">8+</p>
+                <p className="text-orange-500 text-3xl font-bold">6+</p>
                 <p className="text-gray-400 text-sm mt-1">Projects Done</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="text-orange-500 text-3xl font-bold">10+</p>
+                <p className="text-orange-500 text-3xl font-bold">15+</p>
                 <p className="text-gray-400 text-sm mt-1">Technologies</p>
               </div>
             </motion.div>
