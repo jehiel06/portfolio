@@ -7,6 +7,7 @@ import {
     FaGraduationCap,
     FaCode,
     FaServer,
+    FaPython,
     FaJava
 } from 'react-icons/fa';
 
@@ -56,20 +57,29 @@ const Certificates = () => {
         },
         {
             id: 6,
+            title: "Certificate Course in Python (CCP)",
+            issuer: "CSC Computer Education (P) Ltd",
+            date: "June 2023",
+            skills: ["Python", "Functions", "Modules", "Packages", "OOPS", "File IO"],
+            icon: <FaPython />,
+            link: "https://drive.google.com/file/d/1Ih7y4cGGeSjakAGJp4o1tRNywOHza2Ta/view?usp=drive_link",
+            color: "border-l-red-500"
+        },
+        {
+            id: 6,
             title: "Advanced Diploma in Java Programming (ADJP)",
             issuer: "CSC Computer Education (P) Ltd",
             date: "Sep 2023",
             skills: ["C (Programming Language)", "C++", "Java", "Servlets", "HTML5", "Cascading Style Sheets (CSS)"],
             icon: <FaCode />,
-            link: "https://drive.google.com/uc?export=download&id=1nJnklFiggM5WsNziuTtTVoqw9Mysg0CA",
+            link: "https://drive.google.com/file/d/1Ih7y4cGGeSjakAGJp4o1tRNywOHza2Ta/view?usp=drive_link",
             color: "border-l-red-500"
         },
-
         {
             id: 1,
             title: "Superbadge: Agentforce Service",
             issuer: "Salesforce",
-            date: "Jun 2025",
+            date: "June 2025",
             skills: ["Topic & Action Configuration", "Einstein Agent Setup & Deployment", "Service Process Automation"],
             icon: <SiSalesforce />,
             link: "https://www.salesforce.com/trailblazer/jehiel06",
