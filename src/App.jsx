@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Analytics } from "@vercel/analytics/react";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { NavBar } from "./components/NavBar";
 import { MobileMenu } from "./components/MobileMenu";
@@ -45,6 +46,7 @@ function App() {
       <Certificates />
       <Contact />
       <Footer />
+      <Analytics />
     </>
   );
 }
