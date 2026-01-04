@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /*.json
+
+Disallow: /node_modules/
+Disallow: /src/
+
+Sitemap: https://jehiel.vercel.app/sitemap.xml

@@ -1,0 +1,24 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Person",
+            "name": "Jehiel A",
+            "url": "https://jehiel.vercel.app",
+            "image": "https://jehiel.vercel.app/profile.jpg",
+            "jobTitle": "Java Full Stack Developer",
+            "description": "Jehiel A is a professional Java Full Stack Developer specializing in Spring Boot, React, and cloud technologies.",
+            "sameAs": [
+                "https://linkedin.com/in/jehiel06",
+                "https://github.com/jehiel06"
+            ],
+            "knowsAbout": [
+                "Java Development",
+                "Spring Boot",
+                "React.js",
+                "Docker",
+                "Microservices"
+            ]
+        }
+    ]
+}

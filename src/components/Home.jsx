@@ -8,6 +8,48 @@ import { Link } from "react-scroll";
 export const Home = () => {
   return (
     <main id="home" className="relative min-h-screen bg-black pt-16">
+      {/* ========== HIDDEN SEO CONTENT ========== */}
+      <div
+        style={{
+          position: 'absolute',
+          width: '1px',
+          height: '1px',
+          padding: 0,
+          margin: '-1px',
+          overflow: 'hidden',
+          clip: 'rect(0, 0, 0, 0)',
+          whiteSpace: 'nowrap',
+          border: 0
+        }}
+        aria-hidden="true"
+      >
+        <h1>Jehiel A - Java Full Stack Developer Portfolio</h1>
+        <p>
+          <strong>Jehiel A</strong> is a professional Java Full Stack Developer
+          specializing in Spring Boot, React.js, and modern web technologies.
+          <strong>Jehiel A</strong> builds scalable applications, REST APIs,
+          and efficient software solutions. Based in Coimbatore,
+          <strong>Jehiel A</strong> is a Computer Science student at
+          Sri Ramakrishna Engineering College.
+        </p>
+        <h2>Jehiel A's Expertise</h2>
+        <ul>
+          <li>Java Full Stack Development</li>
+          <li>Spring Boot Microservices</li>
+          <li>React.js Frontend Development</li>
+          <li>REST API Design</li>
+          <li>Database Management</li>
+          <li>Cloud Deployment</li>
+        </ul>
+        <p>
+          Contact <strong>Jehiel A</strong> for Java development projects,
+          internship opportunities, or software engineering roles.
+          <strong>Jehiel A</strong> is open to full-time positions,
+          freelance work, and collaborative projects.
+        </p>
+      </div>
+      {/* ========== END SEO CONTENT ========== */}
+
       {/* Container matching navbar width */}
       <div className="max-w-7xl mx-auto px-4 py-20 pb-30">
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-8">
@@ -28,28 +70,31 @@ export const Home = () => {
               </span>
             </div>
 
-            <TypeAnimation
-              sequence={[
-                "Full Stack Java Developer",
-                2000,
-                "Web Developer",
-                2000,
-                "React Developer",
-                2000,
-                "Java Enthusiast",
-                2000,
-                "Computer Science Student",
-                2000,
-                "Problem Solver",
-                2000,
-                "Data Structure and Algorithm",
-                2000,
-              ]}
-              wrapper="p"
-              speed={50}
-              className="text-white text-xl sm:text-3xl mt-4"
-              repeat={Infinity}
-            />
+            {/* Update TypeAnimation with your name */}
+            <div className="h-16 sm:h-20 flex items-center">
+              <TypeAnimation
+                sequence={[
+                  "Full Stack Java Developer",
+                  2000,
+                  "Java Developer - Jehiel A",
+                  2000,
+                  "React Developer",
+                  2000,
+                  "Java Spring Boot Developer",
+                  2000,
+                  "Computer Science Student",
+                  2000,
+                  "Software Engineer - Jehiel A",
+                  2000,
+                  "Web Application Developer",
+                  2000,
+                ]}
+                wrapper="p"
+                speed={50}
+                className="text-white text-xl sm:text-3xl mt-4"
+                repeat={Infinity}
+              />
+            </div>
 
             <motion.p
               className="text-gray-400 text-base sm:text-lg mt-4 leading-relaxed"
@@ -57,9 +102,19 @@ export const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Building scalable web applications with Java, Spring Boot, and
+              <strong>Jehiel A</strong> builds scalable web applications with Java, Spring Boot, and
               React. Passionate about clean code and innovative solutions.
             </motion.p>
+
+            {/* Hidden SEO paragraph */}
+            <div className="hidden" aria-hidden="true">
+              <p>
+                <strong>Jehiel A</strong> is a skilled Java developer with expertise in
+                modern frameworks and tools. <strong>Jehiel A's</strong> portfolio showcases
+                projects in full-stack development, demonstrating technical proficiency
+                and problem-solving abilities.
+              </p>
+            </div>
 
             {/* CTA Buttons */}
             <motion.div
@@ -106,7 +161,7 @@ export const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-orange-500 transition-colors duration-300 hover:scale-110 transform"
-                aria-label="GitHub Profile"
+                aria-label="GitHub Profile - Jehiel A"
               >
                 <FaGithub className="w-7 h-7" />
               </a>
@@ -115,20 +170,20 @@ export const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-orange-500 transition-colors duration-300 hover:scale-110 transform"
-                aria-label="LinkedIn Profile"
+                aria-label="LinkedIn Profile - Jehiel A"
               >
                 <FaLinkedin className="w-7 h-7" />
               </a>
               <a
                 href="mailto:jehiel06.dev@gmail.com"
                 className="text-gray-400 hover:text-orange-500 transition-colors duration-300 hover:scale-110 transform"
-                aria-label="Email"
+                aria-label="Email Jehiel A"
               >
                 <FaEnvelope className="w-7 h-7" />
               </a>
             </motion.div>
 
-            {/* Quick Stats */}
+            {/* Quick Stats - Update with more context */}
             <motion.div
               className="grid grid-cols-3 gap-4 mt-12 max-w-md mx-auto lg:mx-0"
               initial={{ opacity: 0, y: 20 }}
@@ -137,17 +192,45 @@ export const Home = () => {
             >
               <div className="text-center lg:text-left">
                 <p className="text-orange-500 text-3xl font-bold">SREC</p>
-                <p className="text-gray-400 text-sm mt-1">Student</p>
+                <p className="text-gray-400 text-sm mt-1">Student - Jehiel A</p>
+                {/* Hidden SEO text */}
+                <div className="hidden" aria-hidden="true">
+                  <p>Jehiel A studies Computer Science at SREC</p>
+                </div>
               </div>
               <div className="text-center lg:text-left">
                 <p className="text-orange-500 text-3xl font-bold">6+</p>
-                <p className="text-gray-400 text-sm mt-1">Projects Done</p>
+                <p className="text-gray-400 text-sm mt-1">Projects by Jehiel A</p>
+                {/* Hidden SEO text */}
+                <div className="hidden" aria-hidden="true">
+                  <p>Jehiel A has completed multiple Java projects</p>
+                </div>
               </div>
               <div className="text-center lg:text-left">
                 <p className="text-orange-500 text-3xl font-bold">15+</p>
                 <p className="text-gray-400 text-sm mt-1">Technologies</p>
+                {/* Hidden SEO text */}
+                <div className="hidden" aria-hidden="true">
+                  <p>Jehiel A works with Java, Spring, React, and more</p>
+                </div>
               </div>
             </motion.div>
+
+            {/* Additional hidden SEO content */}
+            <div className="hidden" aria-hidden="true">
+              <h2>Jehiel A - Technical Skills</h2>
+              <p>
+                <strong>Jehiel A</strong> is proficient in Java programming,
+                Spring Boot framework, React.js development, database design,
+                REST API creation, and deployment technologies.
+              </p>
+              <h3>Contact Jehiel A</h3>
+              <p>
+                Connect with <strong>Jehiel A</strong> for software development
+                opportunities, Java projects, or technical collaboration.
+                <strong>Jehiel A</strong> is responsive and professional.
+              </p>
+            </div>
           </motion.div>
 
           {/* Right Image Section */}
@@ -165,16 +248,21 @@ export const Home = () => {
                 className="rounded-full object-cover w-full h-full border-4 border-orange-400 shadow-2xl shadow-orange-500/20"
                 src={profile}
                 alt="Jehiel A - Full Stack Java Developer"
+                title="Jehiel A - Java Developer"
               />
+              {/* Hidden image text for SEO */}
+              <div className="hidden" aria-hidden="true">
+                <p>Profile photo of Jehiel A, Java Full Stack Developer</p>
+              </div>
             </div>
 
-            {/* Floating Badge */}
+            {/* Floating Badge - Update text */}
             <motion.div
               className="absolute bottom-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-full text-nowrap text-sm font-semibold shadow-lg"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              Open to Opportunities
+              Jehiel A - Open to Opportunities
             </motion.div>
           </motion.div>
         </div>
@@ -191,6 +279,7 @@ export const Home = () => {
           smooth={true}
           duration={800}
           className="relative cursor-pointer group"
+          aria-label="Scroll to About Jehiel A"
         >
           <motion.div className="flex flex-col items-center text-gray-400 group-hover:text-orange-500 transition-colors">
             {/* Multiple ripple rings */}

@@ -133,7 +133,8 @@ const Projects = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10" />
         <img
           src={project.image}
-          alt={project.title}
+          alt={`${project.title} - Project by Jehiel A`}
+          title={`${project.title} by Jehiel A`}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
       </div>
@@ -154,6 +155,7 @@ const Projects = () => {
             <span
               key={idx}
               className="px-3 py-1 bg-gray-900/50 text-gray-300 text-xs rounded-full border border-gray-800 hover:border-orange-500/50 hover:text-orange-400 transition-colors"
+              title={`${tech} technology used by Jehiel A`}
             >
               {tech}
             </span>
@@ -179,6 +181,7 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 group/btn"
+            aria-label={`View ${project.title} code by Jehiel A on GitHub`}
           >
             <FaGithub className="group-hover/btn:rotate-12 transition-transform" />
             Code
@@ -189,6 +192,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 group/btn"
+              aria-label={`View live demo of ${project.title} by Jehiel A`}
             >
               <FaExternalLinkAlt className="group-hover/btn:translate-x-1 transition-transform" />
               Live Demo
@@ -201,8 +205,46 @@ const Projects = () => {
 
   return (
     <section id="projects" className="min-h-screen bg-black py-20">
+      {/* Hidden SEO Content */}
+      <div
+        style={{
+          position: 'absolute',
+          width: '1px',
+          height: '1px',
+          padding: 0,
+          margin: '-1px',
+          overflow: 'hidden',
+          clip: 'rect(0, 0, 0, 0)',
+          whiteSpace: 'nowrap',
+          border: 0
+        }}
+        aria-hidden="true"
+      >
+        <h1>Projects by Jehiel A - Java Full Stack Developer Portfolio</h1>
+        <p>
+          <strong>Jehiel A</strong> has developed multiple projects showcasing expertise in
+          Java, Spring Boot, React.js, and web technologies. These projects demonstrate
+          <strong>Jehiel A's</strong> skills in full-stack development, problem-solving,
+          and software architecture.
+        </p>
+        <h2>Java Projects by Jehiel A</h2>
+        <p>
+          <strong>Jehiel A</strong> builds web applications, REST APIs, database systems,
+          and responsive user interfaces. Projects include Movie Ticket Booking Chatbot,
+          NexVerify backend system, and various web applications.
+        </p>
+        <h3>Technologies Used by Jehiel A</h3>
+        <ul>
+          <li>Java and Spring Boot for backend development</li>
+          <li>React.js for frontend interfaces</li>
+          <li>MongoDB and PostgreSQL databases</li>
+          <li>HTML, CSS, JavaScript for web applications</li>
+          <li>Docker and cloud deployment</li>
+        </ul>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4">
-        {/* Section Header */}
+        {/* Section Header - Updated with name */}
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: -30 }}
@@ -211,11 +253,20 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-5xl sm:text-6xl text-orange-500 font-bold mb-4">
-            My <span className="text-white">Projects</span>
+            Projects by <span className="text-white">Jehiel A</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Here are some of my recent work. Each project represents a unique challenge and learning experience.
+            Here are some of <strong>Jehiel A's</strong> recent work. Each project represents a unique challenge and learning experience for <strong>Jehiel A</strong>.
           </p>
+
+          {/* Hidden SEO description */}
+          <div className="hidden" aria-hidden="true">
+            <p>
+              <strong>Jehiel A</strong> creates Java applications, web services,
+              and full-stack solutions. These projects showcase <strong>Jehiel A's</strong>
+              technical abilities and development process.
+            </p>
+          </div>
         </motion.div>
 
         {/* Filter Buttons */}
@@ -234,6 +285,7 @@ const Projects = () => {
                 ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/30'
                 : 'bg-gray-900 text-gray-400 hover:text-white hover:bg-gray-800'
                 }`}
+              aria-label={`Filter projects by ${filter.label} by Jehiel A`}
             >
               {filter.label}
             </button>
@@ -247,7 +299,7 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Stats */}
+        {/* Stats - Updated with context */}
         <motion.div
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20"
           initial={{ opacity: 0, y: 30 }}
@@ -257,23 +309,35 @@ const Projects = () => {
         >
           <div className="text-center">
             <div className="text-orange-500 text-4xl font-bold mb-2">6+</div>
-            <div className="text-gray-400 text-sm">Projects Completed</div>
+            <div className="text-gray-400 text-sm">Projects by Jehiel A</div>
+            <div className="hidden" aria-hidden="true">
+              <p><strong>Jehiel A</strong> has completed multiple development projects</p>
+            </div>
           </div>
           <div className="text-center">
             <div className="text-orange-500 text-4xl font-bold mb-2">15+</div>
             <div className="text-gray-400 text-sm">Technologies Used</div>
+            <div className="hidden" aria-hidden="true">
+              <p><strong>Jehiel A</strong> works with Java, Spring, React, and more</p>
+            </div>
           </div>
           <div className="text-center">
             <div className="text-orange-500 text-4xl font-bold mb-2">100%</div>
             <div className="text-gray-400 text-sm">Code Quality</div>
+            <div className="hidden" aria-hidden="true">
+              <p><strong>Jehiel A</strong> follows best practices in software development</p>
+            </div>
           </div>
           <div className="text-center">
             <div className="text-orange-500 text-4xl font-bold mb-2">5K+</div>
             <div className="text-gray-400 text-sm">Lines of Code</div>
+            <div className="hidden" aria-hidden="true">
+              <p><strong>Jehiel A</strong> writes clean, efficient code</p>
+            </div>
           </div>
         </motion.div>
 
-        {/* CTA */}
+        {/* CTA - Updated with name */}
         <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0 }}
@@ -282,11 +346,12 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <p className="text-gray-400 text-lg mb-6">
-            Interested in collaborating or have a project in mind?
+            Interested in collaborating with <strong>Jehiel A</strong> or have a project in mind?
           </p>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-500/50"
+            aria-label="Contact Jehiel A for project collaboration"
           >
             <FaCode className="w-5 h-5" />
             Let's Build Something Amazing
