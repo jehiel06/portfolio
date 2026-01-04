@@ -7,6 +7,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <!-- Add alternative URLs for sections -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://jehiel.vercel.app/#home" />
     <xhtml:link rel="alternate" hreflang="en" href="https://jehiel.vercel.app/#about" />
     <xhtml:link rel="alternate" hreflang="en" href="https://jehiel.vercel.app/#projects" />
     <xhtml:link rel="alternate" hreflang="en" href="https://jehiel.vercel.app/#certificates" />

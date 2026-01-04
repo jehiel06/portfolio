@@ -70,21 +70,25 @@ function App() {
     let pageDescription = baseDescription;
 
     switch (section) {
+      case 'home':
+        pageTitle = "Jehiel A | Java Full Stack Developer Portfolio - Spring Boot & React Expert";
+        pageDescription = "Jehiel A is a Java Full Stack Developer specializing in Spring Boot, React.js, and modern web technologies. View portfolio, projects, and contact information.";
+        break;
       case 'about':
-        pageTitle = "About Jehiel A | Java Full Stack Developer";
-        pageDescription = "Learn about Jehiel A's background, skills, and experience as a Java Full Stack Developer.";
+        pageTitle = "About Jehiel A | Java Full Stack Developer - Skills & Experience";
+        pageDescription = "Learn about Jehiel A's background, skills, education, and experience as a Java Full Stack Developer. View technical expertise and qualifications.";
         break;
       case 'projects':
-        pageTitle = "Jehiel A's Projects | Java Portfolio";
-        pageDescription = "View projects developed by Jehiel A using Java, Spring Boot, React, and modern technologies.";
+        pageTitle = "Projects by Jehiel A | Java Full Stack Developer Portfolio";
+        pageDescription = "View projects developed by Jehiel A using Java, Spring Boot, React, MongoDB, and modern technologies. See live demos and source code.";
         break;
       case 'certificates':
-        pageTitle = "Jehiel A's Certifications | Java Developer";
-        pageDescription = "Certifications and qualifications earned by Jehiel A in Java development and related technologies.";
+        pageTitle = "Certifications | Jehiel A - Java Developer Qualifications";
+        pageDescription = "Certifications and qualifications earned by Jehiel A in Java development, Spring Boot, React, and related technologies.";
         break;
       case 'contact':
-        pageTitle = "Contact Jehiel A | Java Developer";
-        pageDescription = "Get in touch with Jehiel A for Java development opportunities, projects, or collaborations.";
+        pageTitle = "Contact Jehiel A | Java Full Stack Developer - Get In Touch";
+        pageDescription = "Get in touch with Jehiel A for Java development opportunities, project collaborations, internships, or full-time positions.";
         break;
       default:
         pageTitle = baseTitle;
@@ -103,7 +107,7 @@ function App() {
     }
     metaDesc.content = pageDescription;
 
-    // Update canonical URL for section (important for SEO)
+    // Update canonical URL for section
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
