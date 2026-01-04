@@ -3,6 +3,8 @@ Allow: /
 Allow: /*.js
 Allow: /*.css
 Allow: /*.json
+Allow: /favicon.ico
+Allow: /sitemap.xml
 
 Disallow: /node_modules/
 Disallow: /src/
