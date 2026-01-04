@@ -7,7 +7,7 @@ import { VitePluginSitemap } from 'vite-plugin-sitemap';
 export default defineConfig({
   plugins: [react(), tailwindcss(),
   VitePluginSitemap({
-    hostname: 'https://your-portfolio.vercel.app',
+    hostname: 'https://jehiel.vercel.app',
     dynamicRoutes: [
       '/',
       '/#about',
