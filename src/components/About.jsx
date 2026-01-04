@@ -385,7 +385,7 @@ const About = () => {
                                 Get in Touch
                             </a>
                             <a
-                                href="/resume.pdf"
+                                href="/Jehiel_A_resume.pdf"
                                 download
                                 className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white cursor-pointer transition-all duration-300 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:scale-105 text-sm sm:text-base w-full sm:w-auto text-center"
                             >

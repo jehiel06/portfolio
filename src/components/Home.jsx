@@ -140,7 +140,7 @@ export const Home = () => {
                 Get In Touch
               </Link>
               <a
-                href="resume.pdf"
+                href="Jehiel_A_resume.pdf"
                 download
                 className="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-semibold transition-all duration-300"
               >

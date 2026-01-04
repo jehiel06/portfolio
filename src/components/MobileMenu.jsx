@@ -43,7 +43,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
 
       {/* Download CV Button in Mobile Menu */}
       <a
-        href="resume.pdf"
+        href="Jehiel_A_resume.pdf"
         download
         className="mt-10 flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
         onClick={() => setMenuOpen(false)}
