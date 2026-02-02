@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
-import profile from "/src/images/profile.jpg";
+import profile from "/src/images/profile-jehiel-a.png";
 import { Link } from "react-scroll";
 
 export const Home = () => {
